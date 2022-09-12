@@ -1,0 +1,440 @@
+.topSide {
+    position: relative;
+    max-height: 100vh;
+    width: 100%;
+    background: url('../images/pexels-francesco-ungaro-2835436 1.png') no-repeat center;
+    background-size: cover;
+}
+
+.topSide > header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.topSide > header > span {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 72px;
+    color: white;
+}
+
+
+
+.topSide > header > label {
+    display: none;
+}
+
+#open {
+    display: none;
+}
+
+
+
+#open + ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#open + ul > li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#open + ul > li:nth-child(5){
+    padding: 15px 20px;
+    height: 65px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #3E86F5;;
+}
+.topSide .hypertextSection {
+    text-align: center;
+    width: 100%;
+    padding: 120px 400px 200px;
+}
+
+.topSide .hypertextSection h1 {
+    font-weight: 545;
+    font-size: 52px;
+    line-height: 96px;
+    color: white;
+}
+
+.topSide .hypertextSection h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 200%;
+    color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 998px) {
+
+    .topSide > header > label {
+        display: block;
+        z-index: 2;
+    }
+
+    #open + ul{
+        position: absolute;
+        right: -400px;
+        top: 0;
+        transition: all ease-in-out 300ms;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        padding: 80px 30px 30px 80px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #open + ul > li{
+        margin: 10px;
+    }
+
+    #open + ul > li:last-child{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .topSide header span {
+        font-size: 40px;
+    }
+
+    .topSide ul:last-child li {
+        font-size: 20px;
+        line-height: 36px;
+        margin-left: 40px;
+    }
+}
+
+
+    @media screen and (max-width: 1450px) {
+        .topSide .hypertextSection {
+            padding: 120px 350px 200px;
+        }
+
+        .topSide .hypertextSection h1 {
+            font-size: 44px;
+        }
+
+        .topSide .hypertextSection h3 {
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+
+    @media screen and (max-width: 1265px) {
+        .topSide .hypertextSection {
+            padding: 120px 200px 200px;
+        }
+
+        .topSide .hypertextSection h1 {
+            font-size: 38px;
+            line-height: 120%;
+        }
+
+        .topSide .hypertextSection h3 {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    #open:checked + ul {
+        right: 0;
+        transition: all ease-in-out 300ms;
+    }
+
+
+    @media screen and (max-width: 998px) {
+        .topSide .hypertextSection {
+            padding: 120px 120px 200px;
+        }
+
+        .topSide .hypertextSection h1 {
+            font-size: 34px;
+            line-height: 110%;
+        }
+
+        .topSide .hypertextSection h3 {
+            font-size: 17px;
+            line-height: 130%;
+        }
+    }
+
+    @media screen and (max-width: 658px) {
+
+        .topSide .hypertextSection {
+            padding: 100px 100px 180px;
+        }
+
+        .topSide .hypertextSection h1 {
+            font-size: 30px;
+            line-height: 150%;
+        }
+
+        .topSide .hypertextSection h3 {
+            font-size: 17px;
+            line-height: 130%;
+        }
+    }
+
+
+
+    .travelTabs {
+        position: absolute;
+        bottom: -225px;
+        left: 10%;
+        width: 80%;
+    }
+
+    .travelTabCaption {
+        height: 100px;
+        width: min-content;
+        background: white;
+        border-radius: 25px 25px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .travelTabCaption li {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .travelTabCaption li p {
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+    }
+
+    .travelTabCaption li:first-child i {
+        transform: rotate(-45deg);
+    }
+
+    .travelTabCaption li i {
+        color: #3E86F5;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .travelTabCaption li.active {
+        background: rgba(62, 134, 245, 0.2);
+        border-radius: 25px;
+    }
+
+    .travelTabContent {
+        display: none;
+        height: 280px;
+        background: #FFFFFF;
+        border-radius: 0 50px 50px 50px;
+        padding: 60px 48px;
+        justify-content: space-between;
+    }
+
+
+    .travelTabContent > div {
+        display: flex;
+        border: 2px solid rgba(172, 172, 172, 0.5);
+        border-radius: 25px;
+        padding: 44px 22px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .travelTabContent > div:nth-child(2) {
+        margin: 0 40px;
+    }
+
+    .travelTabContent > div > span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        border: 1px dashed rgba(0, 0, 0, 0.5);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .travelTabContent > div:last-child {
+        background: rgba(62, 134, 245, 0.8);
+        border-radius: 65px;
+        font-size: 60px;
+        color: white;
+        padding: 50px;
+        border: none;
+        cursor: pointer;
+        width: min-content;
+    }
+
+    .travelTabContent.active {
+        display: flex; /* по умолчанию показываем нужный блок */
+    }
+
+.travelTabContent > div > div > p > span, .travelTabContent > div > div > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.travelTabContent > div > div > h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+
+.travelTabContent > div > div > p > i {
+    color: #3E86F5;
+    margin-left: 5px;
+}
+
+.travelTabContent > div:nth-child(2) > div:last-child > p > i {
+    transform: rotate(180deg);
+}
+
+    @media screen and (max-width: 1400px) {
+        .travelTabContent.active {
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            height: 580px;
+            border-radius: 0 50px 50px 50px;
+            padding: 60px 48px;
+            justify-content: initial;
+        }
+
+        .travelTabContent > div:nth-child(2) {
+            margin: 20px 0;
+        }
+
+        .travelTabs {
+            bottom: -500px;
+            width: 80%;
+        }
+
+
+    }
+
+    @media screen and (max-width: 1125px) {
+        .travelTabContent > div:last-child {
+            border-radius: 35px;
+            font-size: 30px;
+            padding: 30px;
+        }
+
+        .travelTabContent.active {
+            height: 430px;
+        }
+
+        .travelTabContent > div {
+            padding: 24px 12px;
+        }
+
+        .travelTabContent > div:nth-child(2) {
+            margin: 10px 0;
+            padding: 24px 12px;
+        }
+
+        .travelTabContent > div:last-child {
+            margin-top: 20px;
+        }
+
+        .travelTabs {
+            bottom: -400px;
+            width: 80%;
+        }
+
+        main {
+            padding-top: 370px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .travelTabContent.active {
+            padding: 30px 18px;
+        }
+
+        .travelTabContent > div:nth-child(2) {
+            margin: 5px 0;
+        }
+
+        .travelTabContent > div > div > h4 {
+            font-size: 20px;
+        }
+
+        .travelTabContent > div > span + div {
+            text-align: end;
+        }
+
+        .travelTabContent > div > div > p > span, .travelTabContent > div > div > p {
+            font-size: 16px;
+        }
+    }
+
+
+
+
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}

@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="./styles/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+<div class="topSide">
+    <header>
+        <span>Treloo</span>
+        <label for="open" class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="60" height="60" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </label>
+        <input type="checkbox" id="open"/>
+        <ul>
+            <li>Review</li>
+            <li>Tips</li>
+            <li>Alerts</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="hypertextSection">
+        <h1>Discover Your Life, Travel Where You Want</h1>
+        <h3>Would you explore natur paradise in the world, let’s find the best destination in world with us.</h3>
+    </div>
+    <div class="travelTabs">
+        <ul class="travelTabCaption">
+            <li class="active">
+                <i class="fa-solid fa-plane"></i>
+                <p>Fight</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-hotel"></i>
+                <p>Hotel</p>
+            </li>
+        </ul>
+
+        <div class="travelTabContent active">
+
+            <div>
+                <div>
+                    <p>Living From</p>
+                    <h4>Dubai</h4>
+                </div>
+                <span>
+                    <i class="fa-solid fa-plane"></i>
+                </span>
+                <div>
+                    <p>Going to</p>
+                    <h4>Italy</h4>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>
+                        <span>Leave</span>
+                        <i class="fa-solid fa-plane"></i>
+                    </p>
+                    <h4>23 Jan, Sat</h4>
+                </div>
+                <span>
+                    <i class="fa-regular fa-calendar-days"></i>
+                </span>
+                <div>
+                    <p>
+                        <span>Return</span>
+                        <i class="fa-solid fa-plane"></i>
+                    </p>
+                    <h4>14 Jan, Thu</h4>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </div>
+
+        <div class="travelTabContent">
+            <div>
+                <div>
+                    <p>First Tour</p>
+                    <h4>Rome</h4>
+                </div>
+                <div>
+                    <p>Second Tour</p>
+                    <h4>Milan</h4>
+                </div>
+                <div>
+                    <p>Florencia</p>
+                    <h4>New York</h4>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>
+                        <span>Settlement</span>
+<!--                        <i class="fa-solid fa-plane"></i>-->
+                    </p>
+                    <h4>23 Jan, 09:30</h4>
+                </div>
+                <span>
+                    <i class="fa-regular fa-calendar-days"></i>
+                </span>
+                <div>
+                    <p>
+                        <span>Eviction</span>
+                    </p>
+                    <h4>14 Jan, 11:30</h4>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+<main>
+    <h2>Special Upcoming Offers</h2>
+    <div class="offersTabs">
+
+        <ul class="offersTabCaption">
+            <li class="active">Team</li>
+            <li>Couple</li>
+            <li>Family</li>
+        </ul>
+
+        <div class="offersTabContent active" >
+            <div>
+                <div>
+                    <img src="images/unsplash_7uXn7nudorc.png" alt="img" width="293" height="273">
+                    <p>14 FEB 2022</p>
+                </div>
+                <div>
+                    <span>Relax</span>
+                    <span>3 Days, 3 Nights</span>
+                </div>
+                <div><h4>Loga Sea</h4></div>
+                <div>
+                    <h4>700$<span>/Person</span></h4>
+                    <span>Book Now</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="images/unsplash_HUk2W9fa-Jw.png" alt="img" width="293" height="273">
+                    <p>18 JUN 2022</p>
+                </div>
+                <div>
+                    <span>Adventure</span>
+                    <span>4 Days, 3 Nights</span>
+                </div>
+                <div><h4>Ansgar Scheffold</h4></div>
+                <div>
+                    <h4>400$<span>/Person</span></h4>
+                    <span>Book Now</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="images/unsplash_Yui5vfKHuzs.png" alt="img" width="293" height="273">
+                    <p>22 DEC 2022</p>
+                </div>
+                <div>
+                    <span>Relax</span>
+                    <span>7 Days, 6 Nights</span>
+                </div>
+                <div><h4>Lona X</h4></div>
+                <div>
+                    <h4>340$<span>/Person</span></h4>
+                    <span>Book Now</span>
+                </div>
+            </div>
+        </div>
+        <div class="offersTabContent">
+                <div>
+                    <div>
+                        <img src="images/665x495_0xac120003_18304054021562617444.jpg" alt="img" width="293" height="273">
+                        <p>3 AUG 2022</p>
+                    </div>
+                    <div>
+                        <span>Relax</span>
+                        <span>14 Days, 13 Nights</span>
+                    </div>
+                    <div><h4>Saint-Lucia</h4></div>
+                    <div>
+                        <h4>1200$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/665x495_0xac120003_16041832041562617444.jpg" alt="img" width="293" height="273">
+                        <p>30 JUN 2022</p>
+                    </div>
+                    <div>
+                        <span>Adventure</span>
+                        <span>9 Days, 9 Nights</span>
+                    </div>
+                    <div><h4>Istria, Croatia</h4></div>
+                    <div>
+                        <h4>550$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/moroko.jpg" alt="img" width="293" height="273">
+                        <p>8 MAR 2022</p>
+                    </div>
+                    <div>
+                        <span>Relax</span>
+                        <span>3 Days, 2 Nights</span>
+                    </div>
+                    <div><h4>Fes, Morocco</h4></div>
+                    <div>
+                        <h4>300$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offersTabContent" >
+                <div>
+                    <div>
+                        <img src="images/montana.jpg" alt="img" width="293" height="273">
+                        <p>28 APR 2022</p>
+                    </div>
+                    <div>
+                        <span>Relax</span>
+                        <span>5 Days, 5 Nights</span>
+                    </div>
+                    <div><h4>Big Sky, Montana</h4></div>
+                    <div>
+                        <h4>560$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/sijes.jpeg" alt="img" width="293" height="273">
+                        <p>11 JUL 2022</p>
+                    </div>
+                    <div>
+                        <span>Adventure</span>
+                        <span>9 Days, 8 Nights</span>
+                    </div>
+                    <div><h4>Sitges, Spain</h4></div>
+                    <div>
+                        <h4>350$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/runminia.jpeg" alt="img" width="293" height="273">
+                        <p>28 OCT 2022</p>
+                    </div>
+                    <div>
+                        <span>Relax</span>
+                        <span>12 Days, 11 Nights</span>
+                    </div>
+                    <div><h4>Brasov, Romania</h4></div>
+                    <div>
+                        <h4>680$<span>/Person</span></h4>
+                        <span>Book Now</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="travelAny">
+        <div id="cont">
+            <div class="contChild">
+                <h3>5000+</h3>
+                <p>TOURISTS</p>
+            </div>
+            <div class="contChild">
+                <h3>300+</h3>
+                <p>DESTINATIONS</p>
+            </div>
+            <div class="contChild">
+                <h3>150+</h3>
+                <p>HOTELS</p>
+            </div>
+        </div>
+        <div id="textCont">
+            <h2>Travel Any Corner of The World With Us</h2>
+            <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
+
+                Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+            <button>Contact Us</button>
+        </div>
+
+    </div>
+
+    <div class="recommended">
+        <h2>Recommended Destination</h2>
+
+        <ul class="recommendedCaption">
+            <li class="active">Populor</li>
+            <li>Adventure</li>
+            <li>Beath</li>
+        </ul>
+
+        <div class="recommendedTabContent active">
+            <div>
+                <img src="images/lake.png" alt="alt">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.8</p>
+                </div>
+                <div>
+                    <h3>Lake Louise </h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/kina.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/kina.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/sea.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommendedTabContent">
+            <div>
+                <img src="images/kina.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/sea.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/trees.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/lake.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommendedTabContent">
+            <div>
+                <img src="images/sea.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/lake.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/kina.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/trees.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <p>3.4</p>
+                </div>
+                <div>
+                    <h3>Passo Giau</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>Cambodia</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="slider">
+        <div class="carousel">
+            <ul>
+                <li>
+                    <div>
+                        <div>
+                            <h3>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible. </h3>
+                            <h3>-Vand D</h3>
+                            <p>Happy Treloo</p>
+                        </div>
+                        <div>
+                            <img src="images/Ellipse%203.png" alt="alt">
+                        </div>
+                        <div>
+                            <img src="images/1200px-Cquote2_black%201.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <p>3.4</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <h3>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible. </h3>
+                            <h3>-Vand D</h3>
+                            <p>Happy Treloo</p>
+                        </div>
+                        <div>
+                            <img src="images/person.png" alt="alt">
+                        </div>
+                        <div>
+                            <img src="images/1200px-Cquote2_black%201.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.4</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <h3>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible. </h3>
+                            <h3>-Vand D</h3>
+                            <p>Happy Treloo</p>
+                        </div>
+                        <div>
+                            <img src="images/Ellipse%203.png" alt="alt">
+                        </div>
+                        <div>
+                            <img src="images/1200px-Cquote2_black%201.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <p>3.4</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <h3>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible. </h3>
+                            <h3>-Vand D</h3>
+                            <p>Happy Treloo</p>
+                        </div>
+                        <div>
+                            <img src="images/Ellipse%203.png" alt="alt">
+                        </div>
+                        <div>
+                            <img src="images/1200px-Cquote2_black%201.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <p>3.4</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <h3>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible. </h3>
+                            <h3>-Vand D</h3>
+                            <p>Happy Treloo</p>
+                        </div>
+                        <div>
+                            <img src="images/person.png" alt="alt">
+                        </div>
+                        <div>
+                            <img src="images/1200px-Cquote2_black%201.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <p>3.4</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button type="button" class="prev"><i class="fa fa-chevron-right"></i></button>
+                <button type="button" class="next"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="register">
+        <div>
+            <h2>Don’t Miss The 50% Discount if You register Today</h2>
+            <button>Register Today</button>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>© 2022 Treloo LLC - All right reserved.</div>
+    <ul>
+        <li>Review</li>
+        <li>Tips</li>
+        <li>Alerts</li>
+        <li>Blog</li>
+    </ul>
+</footer>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jcarousellite.js"></script>
+<script type="module" src="scripts/index.js"></script>
+</body>
+</html>
